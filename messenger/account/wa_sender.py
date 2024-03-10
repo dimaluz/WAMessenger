@@ -5,9 +5,9 @@ from . import models
 from .wa_components.wa_parser import get_webhook_parser
 from .wa_components.db_builder import build_wa_message_campaign
 
-TEMP_VERIFICATION_TOKEN = 'EAAFoIROj784BO4HnDuj8OenFxAqbZBehUH1a6xoF2MhMSe79Uzzq24RRWkZAg8WCanijoVhHeDpu4Tq8JZAoJwZCX72i7TuwRSHAeMuaas0GSXZBrywrN29pYTLe5KACSHxuGKe8f67LjaLPRuK9YN5eF0TXypktSpoyzq7ZBtbtmf2ZCRQptxOrcYCdZBM0Xtt4MjIpjS6NZBmrJMtegEBoZD'
+TEMP_VERIFICATION_TOKEN = FB_VERIFY_TOKEN
 #Phone number ID from Business Account
-PHONE_NUMBER_ID = '186959564503397'
+PHONE_NUMBER_ID = PHONE_NUMBER
 
 def send_wa_msg(phone_number, message):
     print('PHONE_NUMBER {0} MESSAGE_BODY {1}'.format(phone_number, message.message_body))
